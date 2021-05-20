@@ -227,14 +227,6 @@
       "oAP" : "\/dev\/global\/header.html",
       "oF" : 0
     },
-    "\/dev\/index.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/index.html",
-      "oF" : 0
-    },
     "\/dev\/index.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -394,61 +386,103 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_adult" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
+    "\/dev\/scss\/sections\/_adult.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_adult",
-      "oF" : 0
+      "oAP" : "\/dev\/scss\/sections\/_adult.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
-    "\/dev\/scss\/sections\/_calendar" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
+    "\/dev\/scss\/sections\/_calendar.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_calendar",
-      "oF" : 0
+      "oAP" : "\/dev\/scss\/sections\/_calendar.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
-    "\/dev\/scss\/sections\/_gallery" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
+    "\/dev\/scss\/sections\/_gallery.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_gallery",
-      "oF" : 0
+      "oAP" : "\/dev\/scss\/sections\/_gallery.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
-    "\/dev\/scss\/sections\/_group" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
+    "\/dev\/scss\/sections\/_group.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_group",
-      "oF" : 0
+      "oAP" : "\/dev\/scss\/sections\/_group.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
-    "\/dev\/scss\/sections\/_hero" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
+    "\/dev\/scss\/sections\/_hero.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_hero",
-      "oF" : 0
+      "oAP" : "\/dev\/scss\/sections\/_hero.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
-    "\/dev\/scss\/sections\/_plan" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
+    "\/dev\/scss\/sections\/_plan.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_plan",
-      "oF" : 0
+      "oAP" : "\/dev\/scss\/sections\/_plan.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
-    "\/dev\/scss\/sections\/_rent" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
+    "\/dev\/scss\/sections\/_rent.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_rent",
-      "oF" : 0
+      "oAP" : "\/dev\/scss\/sections\/_rent.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/dev\/scss\/styles.scss" : {
       "aP" : 0,
