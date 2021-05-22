@@ -17,6 +17,18 @@
       "oAP" : "\/.gitattributes",
       "oF" : 0
     },
+    "\/deploy\/css\/styles.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/css\/styles-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/deploy\/img\/g1.png" : {
       "ft" : 32768,
       "iS" : 51119,
@@ -88,8 +100,8 @@
       "oA" : 0,
       "oAP" : "\/deploy\/img\/hero.png",
       "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
@@ -101,8 +113,8 @@
       "oA" : 0,
       "oAP" : "\/deploy\/img\/mug.png",
       "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
@@ -127,8 +139,8 @@
       "oA" : 0,
       "oAP" : "\/deploy\/img\/wheel.png",
       "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
@@ -217,6 +229,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/global\/footer.html",
+      "oF" : 0
+    },
+    "\/dev\/global\/head.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/global\/head.html",
       "oF" : 0
     },
     "\/dev\/global\/header.kit" : {
