@@ -420,6 +420,9 @@ textarea {
 /* =============
     adult
 ============= */
+#adult ul {
+  border: blueviolet;
+}
 #adult ul li {
   display: grid;
   grid-template-columns: 50px auto 15px;
