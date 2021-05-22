@@ -2,15 +2,17 @@
     adult
 ============= */
 
-#adult
-ul{
-    li{
-        display: grid;
-        grid-template-columns: 50px auto 15px;
-        grid-template-areas: ". adult .";
-
-        div{
-            grid-area: adult;
+#adult{
+    
+    ul{
+        li{
+            display: grid;
+            grid-template-columns: 50px auto 15px;
+            grid-template-areas: ". adult .";
+    
+            div{
+                grid-area: adult;
+            }
         }
     }
 }

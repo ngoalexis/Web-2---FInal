@@ -93,7 +93,6 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */
 }
@@ -416,6 +415,9 @@ textarea {
     Footer
 ============= */
 /* =============
+    plan
+============= */
+/* =============
     adult
 ============= */
 #adult ul li {
@@ -438,18 +440,6 @@ textarea {
 ============= */
 /* =============
     hero
-============= */
-.hero img {
-  width: 100%;
-}
-.hero ul li p {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  text-align: center;
-}
-
-/* =============
-    plan
 ============= */
 /* =============
     rent
