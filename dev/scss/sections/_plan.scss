@@ -3,12 +3,20 @@
 ============= */
 
 #plan{
-    
-   ul{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-   }
 
-   
+    img{ 
+        width: 230px ;
+    }
+    ul{
+        li{
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-area: ". plan ." ;
 
+            div{
+                grid-area: plan;
+
+            }
+        }
+    }
 }

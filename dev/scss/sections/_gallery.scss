@@ -4,4 +4,22 @@
 
 #gallery{
     
+        
+    h1{
+        text-align: center;
+    }
+
+    ul{
+       display: grid;
+    //    grid-template-columns: auto 147px auto;
+    //    background-color: blueviolet;
+      
+        li{
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+    
 }

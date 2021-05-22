@@ -417,6 +417,18 @@ textarea {
 /* =============
     plan
 ============= */
+#plan img {
+  width: 230px;
+}
+#plan ul li {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-area: ". plan .";
+}
+#plan ul li div {
+  grid-area: plan;
+}
+
 /* =============
     adult
 ============= */
@@ -438,12 +450,26 @@ textarea {
 /* =============
     gallery
 ============= */
+#gallery h1 {
+  text-align: center;
+}
+#gallery ul {
+  display: grid;
+}
+#gallery ul li img {
+  width: 100%;
+}
+
 /* =============
     group
 ============= */
 /* =============
     hero
 ============= */
+#hero img {
+  object-fit: cover;
+  width: 100%;
+}
 #hero .p {
   text-align: center;
 }
