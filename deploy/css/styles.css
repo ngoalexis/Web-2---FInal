@@ -433,20 +433,43 @@ textarea {
     adult
 ============= */
 #adult ul {
-  border: blueviolet;
+  background-color: chartreuse;
 }
 #adult ul li {
-  display: grid;
-  grid-template-columns: 50px auto 15px;
-  grid-template-areas: ". adult .";
+  background-color: chocolate;
+  padding: 10px;
 }
 #adult ul li div {
-  grid-area: adult;
+  text-transform: lowercase;
+  background-color: cornflowerblue;
+  text-align: left;
+}
+#adult .tech {
+  text-align: right;
 }
 
 /* =============
     calendar
 ============= */
+#calendar img {
+  width: 30%;
+}
+#calendar ul {
+  display: grid;
+}
+#calendar ul li {
+  grid-template-columns: 16px auto 16px;
+  padding: 16px;
+}
+#calendar ul li div {
+  text-align: center;
+}
+#calendar .scroll {
+  background-color: chartreuse;
+  width: auto;
+  align-self: center;
+}
+
 /* =============
     gallery
 ============= */

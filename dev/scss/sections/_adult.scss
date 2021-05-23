@@ -5,15 +5,23 @@
 #adult{
     
     ul{
-        border: blueviolet;
+        background-color: chartreuse;
         li{
-            display: grid;
-            grid-template-columns: 50px auto 15px;
-            grid-template-areas: ". adult .";
+            background-color: chocolate;
+            padding: 10px;
+
+            // display: grid;
+            // grid-template-columns: 50px auto 15px;
+            // grid-template-areas: ". adult .";
     
             div{
-                grid-area: adult;
+                text-transform: lowercase;
+                background-color: cornflowerblue;
+                text-align: left;
             }
         }
+    }
+    .tech{
+        text-align: right;
     }
 }
