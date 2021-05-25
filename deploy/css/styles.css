@@ -389,10 +389,11 @@ p {
 ============= */
 .buttonred {
   font-family: "Poppins", sans-serif;
-  caret-color: white;
   background-color: #E84855;
-  padding: 5px;
+  padding: 9px;
   border: none;
+  margin-top: 15px;
+  color: white;
 }
 
 /* =============
@@ -490,25 +491,55 @@ footer > div #social ul li {
 /* =============
     adult
 ============= */
-#adult h1 {
+#adult {
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". adult .";
+}
+#adult ul {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: " h1 " " h2 " " settings " " private " " tech";
+  grid-area: adult;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#adult ul h1 {
+  margin-bottom: 30px;
+}
+#adult ul h2 {
+  margin-bottom: 20px;
 }
 #adult ul li {
-  padding: 5px;
-  text-align: left;
+  margin-bottom: 20px;
 }
-#adult ul li div {
-  padding: 5px;
-  text-transform: lowercase;
-  background-color: cornflowerblue;
+#adult ul li #settings {
+  grid-area: settings;
 }
-#adult ul li div p {
-  padding-bottom: 10px;
+#adult ul li #settings h3 {
+  margin-bottom: 15px;
 }
-#adult .tech {
-  padding: 10px;
+#adult ul li #settings div p {
+  font-family: "Poppins", sans-serif;
+}
+#adult ul li #private {
+  grid-area: private;
+}
+#adult ul li #private h3 {
+  margin-bottom: 15px;
+}
+
+#tech {
+  grid-area: tech;
   text-align: right;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#tech h2 {
+  margin-bottom: 15px;
+}
+#tech p {
+  font-family: "Poppins", sans-serif;
 }
 
 /* =============
