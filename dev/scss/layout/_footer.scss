@@ -2,3 +2,46 @@
     Footer
 ============= */
 
+footer{
+
+    display: grid;
+    grid-template-columns:16px auto 16px;
+    grid-template-areas: ". footer .";
+
+    >div{
+      grid-area: footer;
+
+      display: grid;
+      grid-template-columns: 50% auto;
+      grid-template-areas: "address hours"
+      "logo social";
+
+   #address{
+        grid-area: address;
+    }
+
+    #logo{
+       grid-area: logo;
+    }
+
+    #hours{
+        grid-area: hours;
+    
+    }
+
+    #social{
+        grid-area: social;
+        ul{
+             display: flex;
+             li{
+                padding: 5px;
+             }
+             
+        }
+       
+    } 
+    }
+
+   
+}
+
