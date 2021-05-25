@@ -3,21 +3,21 @@
 ============= */
 
 #plan{
+   
+    display: grid;
+    grid-template-columns: 16px auto 16px;
 
     img{ 
         width: 230px ;
+        padding: 5px;
     }
     ul{
+        // background-color: cyan;
+        
         li{
-            display: grid;
-            grid-template-columns: 16px auto 16px;
-            grid-area: ". plan ." ;
-
-            div{
-                grid-area: plan;
-                
-
-            }
+            background-color: crimson;
+            float: right;
+            // grid-row: ;
         }
     }
 }

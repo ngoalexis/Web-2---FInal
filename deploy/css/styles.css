@@ -417,45 +417,52 @@ textarea {
 /* =============
     plan
 ============= */
-#plan img {
-  width: 230px;
-}
-#plan ul li {
+#plan {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-area: ". plan .";
 }
-#plan ul li div {
-  grid-area: plan;
+#plan img {
+  width: 230px;
+  padding: 5px;
+}
+#plan ul li {
+  background-color: crimson;
+  float: right;
 }
 
 /* =============
     adult
 ============= */
-#adult ul {
-  background-color: chartreuse;
+#adult h1 {
+  display: grid;
+  grid-template-columns: 70% 30%;
 }
 #adult ul li {
-  background-color: chocolate;
-  padding: 10px;
-}
-#adult ul li div {
-  text-transform: lowercase;
-  background-color: cornflowerblue;
+  padding: 5px;
   text-align: left;
 }
+#adult ul li div {
+  padding: 5px;
+  text-transform: lowercase;
+  background-color: cornflowerblue;
+}
 #adult .tech {
+  padding: 10px;
   text-align: right;
 }
 
 /* =============
     calendar
 ============= */
+#calendar h1 {
+  padding: 20px;
+}
 #calendar img {
-  width: 30%;
+  width: 100%;
 }
 #calendar ul {
   display: grid;
+  padding: 20px;
 }
 #calendar ul li {
   grid-template-columns: 16px auto 16px;
@@ -473,8 +480,12 @@ textarea {
 /* =============
     gallery
 ============= */
+#gallery {
+  padding: 16px;
+}
 #gallery h1 {
   text-align: center;
+  padding: 30px;
 }
 #gallery ul {
   display: grid;
@@ -486,6 +497,12 @@ textarea {
 /* =============
     group
 ============= */
+#group h1 {
+  text-align: right;
+}
+#group img {
+  width: 100%;
+}
 /* =============
     hero
 ============= */
@@ -494,9 +511,21 @@ textarea {
   width: 100%;
 }
 #hero .p {
+  padding: 50px;
   text-align: center;
 }
 
 /* =============
     rent
 ============= */
+#rent ul {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". rent .";
+  text-align: right;
+  padding: 20px;
+  background-color: darkblue;
+}
+#rent ul li {
+  grid-area: rent;
+}

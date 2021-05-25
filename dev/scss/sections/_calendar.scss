@@ -4,12 +4,16 @@
 
 #calendar{
 
+    h1{
+        padding: 20px;
+    }
     img{
-        width: 30%;
+        width: 100%;
     }
 
     ul{
         display: grid;
+        padding: 20px;
         // background-color: blueviolet;
         li{
             // background-color: brown;

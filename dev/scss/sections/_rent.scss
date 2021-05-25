@@ -3,5 +3,21 @@
 ============= */
 
 #rent{
-    
+    ul{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". rent .";
+        text-align: right;
+        padding: 20px;
+        background-color: darkblue;
+
+        li{
+            grid-area: rent;
+
+        }
+
+        button{
+
+        }
+    }
 }
