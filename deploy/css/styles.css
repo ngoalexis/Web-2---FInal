@@ -367,7 +367,7 @@ body ul li {
     Typography
 ============= */
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
 }
 
 h1, h2, h3, h4 {
@@ -387,6 +387,13 @@ p {
 /* =============
     Buttons
 ============= */
+.buttonred {
+  font-family: "Poppins", sans-serif;
+  background-color: red;
+  padding: 5px;
+  border: none;
+}
+
 /* =============
     Forms
 ============= */
@@ -419,15 +426,36 @@ textarea {
 ============= */
 #plan {
   display: grid;
-  grid-template-columns: 16px auto 16px;
 }
 #plan img {
-  width: 230px;
-  padding: 5px;
+  width: 250px;
+}
+#plan ul {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-areas: "img1 home" "img2 date";
+  background-color: darkblue;
 }
 #plan ul li {
-  background-color: crimson;
-  float: right;
+  background-color: brown;
+}
+#plan ul #img1 {
+  grid-area: img1;
+}
+#plan ul #img2 {
+  grid-area: img2;
+}
+#plan ul #home {
+  grid-area: home;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#plan ul #home button {
+  display: block;
+}
+#plan ul #date {
+  grid-area: date;
 }
 
 /* =============
@@ -446,6 +474,9 @@ textarea {
   text-transform: lowercase;
   background-color: cornflowerblue;
 }
+#adult ul li div p {
+  padding-bottom: 10px;
+}
 #adult .tech {
   padding: 10px;
   text-align: right;
@@ -457,8 +488,8 @@ textarea {
 #calendar h1 {
   padding: 20px;
 }
-#calendar img {
-  width: 100%;
+#calendar #scroll h3 {
+  text-align: center;
 }
 #calendar ul {
   display: grid;
@@ -470,11 +501,6 @@ textarea {
 }
 #calendar ul li div {
   text-align: center;
-}
-#calendar .scroll {
-  background-color: chartreuse;
-  width: auto;
-  align-self: center;
 }
 
 /* =============
@@ -521,11 +547,13 @@ textarea {
 #rent ul {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". rent .";
-  text-align: right;
-  padding: 20px;
-  background-color: darkblue;
+  grid-template-areas: ". rent ." ". button . ";
 }
 #rent ul li {
+  text-align: right;
   grid-area: rent;
+}
+#rent ul li button {
+  grid-area: button;
+  margin-top: 400px;
 }

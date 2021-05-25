@@ -5,19 +5,60 @@
 #plan{
    
     display: grid;
-    grid-template-columns: 16px auto 16px;
+    // grid-template-columns: [1] 16px [2] 50% [3] 50% [4]16px;
+    // grid-template-rows: 50% 50%;
+    // background-color: darkblue;
+    // padding: 5px;
+    
 
-    img{ 
-        width: 230px ;
-        padding: 5px;
+    img{
+        width: 250px;
+        // grid-column-start: 1;
+
     }
+    
     ul{
-        // background-color: cyan;
-        
+        // background-color: aquamarine;
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "img1 home"
+                            "img2 date";
+        // grid-template-rows: 50% 50%;
+        background-color: darkblue;
+
         li{
-            background-color: crimson;
-            float: right;
-            // grid-row: ;
+
+             background-color: brown;
+            //  grid-column-start: 2;
+            //  grid-column-end: 3;
+
+        }
+
+        #img1{
+           grid-area: img1;
+        }
+
+        #img2{
+            grid-area: img2;
+        }
+       
+        #home{
+           grid-area: home;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+
+        h2{
+            
+        }
+        button{
+            display: block;
+
+        }
+        }
+
+        #date{
+            grid-area: date;
         }
     }
 }

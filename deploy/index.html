@@ -10,8 +10,11 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
-
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
      <!-- Font Awesome -->
      <script src="https://kit.fontawesome.com/db8be9eca2.js" crossorigin="anonymous"></script>
 
@@ -35,28 +38,34 @@
 
 <section id="plan">
     <ul>
-            <img src="img/mug.png" alt="mug">
-
-                <li>
+        <li>
+            <img id="img1" src="img/mug.png" alt="mug">
+        </li>
+            
+                <li id="home">
                     <h2> Take Home Pottery</h2>
-                    <button> Read More</button>
+                    <button class="buttonred"> Read More</button>
                 </li>
-    
-                <img src="img/wheel.png" alt="wheel"> 
-          
-            <li>
-                <h2> Date Night Projects</h2>
-                <button> Read More </button>
-            </li>
+        <li>
+            <img id="img2" src="img/wheel.png" alt="wheel"> 
+        </li>
+            
+                <li id="date">
+                    <h2> Date Night Projects</h2>
+                    <button class="buttonred"> Read More </button>
+                </li>
       
     </ul>
 </section>
 
 <section id="calendar">
     <H1> March </H1>
-    <a href="#" >
-        <img class="scroll" src="img/calendarscrolldorw.png" alt="calendar scroll down">
-    </a>
+
+    <div id="scroll">
+        <!-- <img class="scroll" src="img/calendarscrolldorw.png" alt="calendar scroll down"> -->
+        <h3>March 12, 2021</h3>
+    </div>
+
     <ul>
         <li>
             <div class="family">
@@ -71,13 +80,13 @@
             <div class="deals">
                 <img src="img/whitebowl.png" alt="White glazing">
                 <h3> 30% Off Glazing </h3>
-                <button> Register </button>
+                <button class="buttonred"> Register </button>
         </li>
         <li>
             <div>
                 <img src="img/glazes.png" alt="different glaze colors">
                 <h3> Free Hour Paint </h3>
-                <button> Register </button>
+                <button class="buttonred" > Register </button>
             </div>
             </div>
         </li>
@@ -138,8 +147,9 @@
         </li>
     
         <video src=""></video>
-       
+       <li>
         <button> View Rental Plans </button>
+       </li>
     </ul> 
 </section>
 
