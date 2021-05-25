@@ -7,6 +7,7 @@ footer{
     display: grid;
     grid-template-columns:16px auto 16px;
     grid-template-areas: ". footer .";
+    padding-top: 10px;
 
     >div{
       grid-area: footer;
