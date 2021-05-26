@@ -1,0 +1,28 @@
+/* =============
+    gallery
+============= */
+
+#gallery{
+    
+    padding: 16px;
+
+    h1{
+        text-align: center;
+        padding: 30px;
+        
+    }
+
+    ul{
+       display: grid;
+    //    grid-template-columns: auto 147px auto;
+    //    background-color: blueviolet;
+      
+        li{
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+    
+}

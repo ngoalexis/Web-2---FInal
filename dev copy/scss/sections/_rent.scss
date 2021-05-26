@@ -1,0 +1,22 @@
+/* =============
+    rent
+============= */
+
+#rent{
+    ul{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". rent ."
+                             ". button . ";
+
+        li{
+            text-align: right;
+            grid-area: rent;
+            
+            button{
+            grid-area: button;
+            margin-top: 400px;
+        }
+        }
+    }
+}
