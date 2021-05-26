@@ -12,6 +12,11 @@
         li{
             text-align: right;
             grid-area: rent;
+
+            h1{
+                margin-bottom: 20px;
+                margin-top: 40px;
+            }
             
             button{
             grid-area: button;

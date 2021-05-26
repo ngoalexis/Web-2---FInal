@@ -7,7 +7,10 @@
     margin-top: 30px;
     margin-bottom: 30px;
 
-    h1{ padding: 20px;}
+    h1{ 
+        padding: 20px;
+        font-weight: bold;
+    }
 
     #scroll{
        h3{ text-align: center;}
@@ -26,6 +29,9 @@
                 // border-width: thick;
                 // background-color: cadetblue;
                 text-align: center;
+                h2{
+                    margin-bottom: 15px;
+                }
             }
         }
     }

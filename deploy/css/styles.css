@@ -428,21 +428,31 @@ footer {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
   padding-top: 10px;
+  margin-top: 100px;
+  background-color: #D8D8D8;
 }
 footer > div {
   grid-area: footer;
   display: grid;
-  grid-template-columns: 50% auto;
-  grid-template-areas: "address hours" "logo social";
+  grid-template-columns: 40% 10% 50%;
+  grid-template-areas: "address . hours" "logo . social";
 }
 footer > div #address {
   grid-area: address;
 }
 footer > div #logo {
   grid-area: logo;
+  margin-top: -90px;
 }
 footer > div #hours {
   grid-area: hours;
+  margin-bottom: 20px;
+}
+footer > div #hours h2 {
+  margin-bottom: 20px;
+}
+footer > div #hours ul li #walk {
+  margin-top: 15px;
 }
 footer > div #social {
   grid-area: social;
@@ -493,53 +503,28 @@ footer > div #social ul li {
 /* =============
     adult
 ============= */
-#adult {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". adult .";
-}
-#adult ul {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-areas: " h1 " " h2 " " settings " " private " " tech";
-  grid-area: adult;
-}
-#adult ul h1 {
-  margin-bottom: 30px;
-}
-#adult ul h2 {
-  margin-bottom: 20px;
-}
-#adult ul li {
-  margin-bottom: 20px;
-}
-#adult ul li #settings {
-  grid-area: settings;
-}
-#adult ul li #settings h3 {
-  margin-bottom: 15px;
-}
-#adult ul li #settings p {
-  font-family: "Poppins", sans-serif;
-}
-#adult ul li #private {
-  grid-area: private;
-}
-#adult ul li #private h3 {
-  margin-bottom: 15px;
-}
-
-#tech {
-  grid-area: tech;
-  text-align: right;
+#adult h1 {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-#tech h2 {
-  margin-bottom: 15px;
+#adult ul {
+  margin: 16px;
 }
-#tech p {
-  font-family: "Poppins", sans-serif;
+#adult ul li {
+  margin-bottom: 40px;
+}
+#adult ul li h3 {
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+#adult #tech {
+  grid-area: tech;
+  text-align: right;
+  margin-bottom: 40px;
+  margin: 16px;
+}
+#adult #tech h2 {
+  margin-bottom: 15px;
 }
 
 /* =============
@@ -551,6 +536,7 @@ footer > div #social ul li {
 }
 #calendar h1 {
   padding: 20px;
+  font-weight: bold;
 }
 #calendar #scroll h3 {
   text-align: center;
@@ -565,6 +551,9 @@ footer > div #social ul li {
 }
 #calendar ul li div {
   text-align: center;
+}
+#calendar ul li div h2 {
+  margin-bottom: 15px;
 }
 
 /* =============
@@ -587,12 +576,22 @@ footer > div #social ul li {
 /* =============
     group
 ============= */
+#group {
+  margin: 16px;
+}
 #group h1 {
   text-align: right;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+#group p {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 #group img {
   width: 100%;
 }
+
 /* =============
     hero
 ============= */
@@ -603,6 +602,8 @@ footer > div #social ul li {
 #hero .p {
   padding: 50px;
   text-align: center;
+  font-style: italic;
+  font-size: 15px;
 }
 
 /* =============
@@ -616,6 +617,10 @@ footer > div #social ul li {
 #rent ul li {
   text-align: right;
   grid-area: rent;
+}
+#rent ul li h1 {
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 #rent ul li button {
   grid-area: button;
