@@ -4,18 +4,21 @@
 
 #gallery{
     
-    padding: 16px;
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+    grid-template-areas: ". header ."
+                         ". images .";
 
     h1{
+        grid-area: header;
         text-align: center;
         padding: 30px;
-        
+        font-weight: bold;
     }
 
     ul{
-       display: grid;
-    //    grid-template-columns: auto 147px auto;
-    //    background-color: blueviolet;
+        grid-area: images;
+        display: grid;
       
         li{
 
@@ -24,5 +27,4 @@
             }
         }
     }
-    
 }

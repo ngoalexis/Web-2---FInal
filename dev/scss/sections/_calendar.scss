@@ -4,30 +4,33 @@
 
 #calendar{
 
-    margin-top: 30px;
-    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    grid-template-areas: "header . ."
+                         ". scroll ."
+                         ". content .";
 
     h1{ 
+        grid-area: header;
         padding: 20px;
         font-weight: bold;
     }
 
     #scroll{
+        grid-area: scroll;
        h3{ text-align: center;}
     }
 
     ul{
         display: grid;
         padding: 20px;
-        // background-color: blueviolet;
+        grid-area: content;
+
         li{
-            // background-color: brown;
             grid-template-columns: 16px auto 16px;
             padding: 16px;
 
             div{
-                // border-width: thick;
-                // background-color: cadetblue;
                 text-align: center;
                 h2{
                     margin-bottom: 15px;

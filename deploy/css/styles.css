@@ -451,6 +451,9 @@ footer > div #hours {
 footer > div #hours h2 {
   margin-bottom: 20px;
 }
+footer > div #hours ul li {
+  margin-bottom: 20px;
+}
 footer > div #hours ul li #walk {
   margin-top: 15px;
 }
@@ -531,12 +534,17 @@ footer > div #social ul li {
     calendar
 ============= */
 #calendar {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 10% auto 10%;
+  grid-template-areas: "header . ." ". scroll ." ". content .";
 }
 #calendar h1 {
+  grid-area: header;
   padding: 20px;
   font-weight: bold;
+}
+#calendar #scroll {
+  grid-area: scroll;
 }
 #calendar #scroll h3 {
   text-align: center;
@@ -544,6 +552,7 @@ footer > div #social ul li {
 #calendar ul {
   display: grid;
   padding: 20px;
+  grid-area: content;
 }
 #calendar ul li {
   grid-template-columns: 16px auto 16px;
@@ -560,13 +569,18 @@ footer > div #social ul li {
     gallery
 ============= */
 #gallery {
-  padding: 16px;
+  display: grid;
+  grid-template-columns: 5% auto 5%;
+  grid-template-areas: ". header ." ". images .";
 }
 #gallery h1 {
+  grid-area: header;
   text-align: center;
   padding: 30px;
+  font-weight: bold;
 }
 #gallery ul {
+  grid-area: images;
   display: grid;
 }
 #gallery ul li img {
