@@ -4,6 +4,7 @@
 
 #group{
     margin: 16px;
+    text-align: right;
 
     h1{
         text-align: right;
@@ -14,9 +15,11 @@
     p{
         margin-top: 16px;
         margin-bottom: 16px;
+        text-align: left;
     }
 
     img{
         width: 100%;
     }
+
 }
