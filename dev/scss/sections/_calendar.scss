@@ -5,15 +5,17 @@
 #calendar{
 
     display: grid;
-    grid-template-columns: 10% auto 10%;
-    grid-template-areas: "header . ."
+    grid-template-columns: 16 auto 16px;
+    grid-template-areas:". header ."
                          ". scroll ."
                          ". content .";
 
     h1{ 
         grid-area: header;
-        padding: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
         font-weight: bold;
+
     }
 
     #scroll{
@@ -27,8 +29,9 @@
         grid-area: content;
 
         li{
-            grid-template-columns: 16px auto 16px;
-            padding: 16px;
+            // grid-template-columns: 16px auto 16px;
+            margin-bottom: 20px;
+            
 
             div{
                 text-align: center;
