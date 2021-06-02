@@ -9,13 +9,13 @@
     grid-template-areas: ". plan .";
 
     img{
-        width: 230px;
+        width: 100%;
     }
     
     ul{
         
         display: grid;
-        grid-template-columns: 30% auto;
+        grid-template-columns: 60% auto;
         grid-template-areas: "img1 home"
                             "img2 date";
         grid-area: plan;
@@ -35,7 +35,7 @@
            justify-content: center;
            align-items: center;
            margin-top: 20px;
-           margin-left: 120px;
+           margin-left: 50px;
            
         
         }
@@ -44,7 +44,19 @@
             grid-area: date;
             align-items: center;
             margin-top: 20px;
-            margin-left: 120px;
+            margin-left: 50px;
+
+            #nofood{
+                
+                display: none;
+
+                @include md{
+                    display: grid;
+                    margin-top: 20px;
+                    // background-color: burlywood;
+                }
+                
+            }
         }
     }
 }

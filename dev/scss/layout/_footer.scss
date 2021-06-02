@@ -44,7 +44,9 @@ footer{
             }
         }
         
-    
+        @include md{
+            padding-left: 60px;
+        }
     }
 
     #social{
@@ -56,11 +58,15 @@ footer{
                 padding: 5px;
              }
              
+        @include md{
+            ul{
+                li{
+                    margin-left: 60px;
+                }
+            }
         }
-       
+        }
     } 
     }
-
-   
 }
 

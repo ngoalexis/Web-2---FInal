@@ -29,6 +29,19 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/Calendar.png" : {
+      "ft" : 32768,
+      "iS" : 69725,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Calendar.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/calendarscrolldorw.png" : {
       "ft" : 32768,
       "iS" : 4477,
@@ -954,19 +967,6 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
-    },
-    "\/mug.jpg" : {
-      "ft" : 16384,
-      "iS" : 113327,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/mug.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
     }
   },
   "hooks" : [

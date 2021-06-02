@@ -5,7 +5,7 @@
 #gallery{
     
     display: grid;
-    grid-template-columns: 5% auto 5%;
+    grid-template-columns: 16px auto 16px;
     grid-template-areas: ". header ."
                          ". images .";
 

@@ -368,6 +368,7 @@ body ul li {
 ============= */
 body {
   font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1, h2, h3, h4 {
@@ -457,6 +458,11 @@ footer > div #hours ul li {
 footer > div #hours ul li #walk {
   margin-top: 15px;
 }
+@media (min-width: 768px) {
+  footer > div #hours {
+    padding-left: 60px;
+  }
+}
 footer > div #social {
   grid-area: social;
 }
@@ -465,6 +471,11 @@ footer > div #social ul {
 }
 footer > div #social ul li {
   padding: 5px;
+}
+@media (min-width: 768px) {
+  footer > div #social ul ul li {
+    margin-left: 60px;
+  }
 }
 
 /* =============
@@ -476,11 +487,11 @@ footer > div #social ul li {
   grid-template-areas: ". plan .";
 }
 #plan img {
-  width: 230px;
+  width: 100%;
 }
 #plan ul {
   display: grid;
-  grid-template-columns: 30% auto;
+  grid-template-columns: 60% auto;
   grid-template-areas: "img1 home" "img2 date";
   grid-area: plan;
 }
@@ -495,13 +506,22 @@ footer > div #social ul li {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  margin-left: 120px;
+  margin-left: 50px;
 }
 #plan ul #date {
   grid-area: date;
   align-items: center;
   margin-top: 20px;
-  margin-left: 120px;
+  margin-left: 50px;
+}
+#plan ul #date #nofood {
+  display: none;
+}
+@media (min-width: 768px) {
+  #plan ul #date #nofood {
+    display: grid;
+    margin-top: 20px;
+  }
 }
 
 /* =============
@@ -535,20 +555,39 @@ footer > div #social ul li {
 ============= */
 #calendar {
   display: grid;
-  grid-template-columns: 16 auto 16px;
-  grid-template-areas: ". header ." ". scroll ." ". content .";
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: "header . ." ". scroll ." ". cal ." ". content .";
 }
 #calendar h1 {
   grid-area: header;
   margin-bottom: 20px;
   margin-top: 20px;
   font-weight: bold;
+  font-size: 60px;
+}
+#calendar #cal {
+  display: none;
+}
+@media (min-width: 768px) {
+  #calendar #cal {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    grid-area: cal;
+    display: grid;
+    align-items: center;
+  }
 }
 #calendar #scroll {
   grid-area: scroll;
 }
 #calendar #scroll h3 {
   text-align: center;
+}
+@media (min-width: 768px) {
+  #calendar #scroll {
+    display: none;
+  }
 }
 #calendar ul {
   display: grid;
@@ -564,13 +603,16 @@ footer > div #social ul li {
 #calendar ul li div h2 {
   margin-bottom: 15px;
 }
+#calendar ul li div img {
+  width: 100%;
+}
 
 /* =============
     gallery
 ============= */
 #gallery {
   display: grid;
-  grid-template-columns: 5% auto 5%;
+  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header ." ". images .";
 }
 #gallery h1 {
