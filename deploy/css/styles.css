@@ -468,6 +468,7 @@ footer > div #social {
 }
 footer > div #social ul {
   display: flex;
+  margin-left: 55px;
 }
 footer > div #social ul li {
   padding: 5px;
@@ -571,11 +572,10 @@ footer > div #social ul li {
 @media (min-width: 768px) {
   #calendar #cal {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 200px;
     margin-bottom: 100px;
     grid-area: cal;
     display: grid;
-    align-items: center;
   }
 }
 #calendar #scroll {
@@ -596,12 +596,15 @@ footer > div #social ul li {
 }
 #calendar ul li {
   margin-bottom: 20px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 #calendar ul li div {
   text-align: center;
 }
 #calendar ul li div h2 {
   margin-bottom: 15px;
+  margin-top: 30px;
 }
 #calendar ul li div img {
   width: 100%;
@@ -646,6 +649,19 @@ footer > div #social ul li {
   margin-bottom: 16px;
   text-align: left;
 }
+@media (min-width: 768px) {
+  #group #phone {
+    display: none;
+  }
+}
+#group #md {
+  display: none;
+}
+@media (min-width: 768px) {
+  #group #md {
+    display: grid;
+  }
+}
 #group img {
   width: 100%;
 }
@@ -670,7 +686,7 @@ footer > div #social ul li {
 #rent ul {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". rent ." ". button . ";
+  grid-template-areas: ". rent ." ". video ." ". button . ";
 }
 #rent ul li {
   text-align: right;
@@ -682,5 +698,11 @@ footer > div #social ul li {
 }
 #rent ul li button {
   grid-area: button;
-  margin-top: 400px;
+  margin-top: 600px;
+}
+#rent ul li #video {
+  text-align: right;
+  margin-top: 20px;
+  grid-area: video;
+  width: 100%;
 }

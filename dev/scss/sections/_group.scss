@@ -18,6 +18,20 @@
         text-align: left;
     }
 
+    #phone{
+
+        @include md{
+            display: none;
+        }
+    }
+    #md{
+        display: none;
+
+        @include md{
+            display: grid;
+        }
+    }
+
     img{
         width: 100%;
     }

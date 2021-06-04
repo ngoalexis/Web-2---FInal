@@ -7,6 +7,7 @@
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". rent ."
+                             ". video ."
                              ". button . ";
 
         li{
@@ -19,9 +20,18 @@
             }
             
             button{
-            grid-area: button;
-            margin-top: 400px;
+                grid-area: button;
+                margin-top: 600px;
+
         }
+
+        #video{
+            text-align: right;
+            margin-top: 20px;
+            grid-area: video;
+            width: 100%;
+        }
+
         }
     }
 }
