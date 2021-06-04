@@ -572,8 +572,8 @@ footer > div #social ul li {
 @media (min-width: 768px) {
   #calendar #cal {
     width: 100%;
-    margin-top: 200px;
-    margin-bottom: 100px;
+    margin-top: 150px;
+    margin-bottom: 40px;
     grid-area: cal;
     display: grid;
   }
@@ -595,7 +595,7 @@ footer > div #social ul li {
   grid-area: content;
 }
 #calendar ul li {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-left: 70px;
   margin-right: 70px;
 }
@@ -643,6 +643,7 @@ footer > div #social ul li {
   text-align: right;
   margin-bottom: 20px;
   margin-top: 60px;
+  grid-area: header;
 }
 #group p {
   margin-top: 16px;
@@ -659,10 +660,15 @@ footer > div #social ul li {
 }
 @media (min-width: 768px) {
   #group #md {
+    grid-area: content;
     display: grid;
   }
 }
+#group #buttonred {
+  grid-area: button;
+}
 #group img {
+  grid-area: image;
   width: 100%;
 }
 
