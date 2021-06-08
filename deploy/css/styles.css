@@ -440,6 +440,7 @@ footer > div {
 }
 footer > div #address {
   grid-area: address;
+  margin-top: 68px;
 }
 footer > div #logo {
   grid-area: logo;
@@ -447,7 +448,8 @@ footer > div #logo {
 }
 footer > div #hours {
   grid-area: hours;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 15pxpx;
 }
 footer > div #hours h2 {
   margin-bottom: 20px;
@@ -456,7 +458,7 @@ footer > div #hours ul li {
   margin-bottom: 20px;
 }
 footer > div #hours ul li #walk {
-  margin-top: 15px;
+  margin-top: 30px;
 }
 @media (min-width: 768px) {
   footer > div #hours {
