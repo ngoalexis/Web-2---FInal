@@ -5,41 +5,48 @@
 #rent{
     
     text-align: right;
-    // grid-template-columns: 16px auto 16px;
-    // grid-template-areas: ". h1 ."
-    // ". content ."
-    // ". buttonred";
-
-    h1{
-        margin-top: 20px;
-    }
+    margin-bottom: 30px;
     
-    #buttonred{
-        grid-area: buttonred;
-        margin-top: 20px;
-        }
-    
-ul{
-    grid-area: content;
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". h1 ."
-                         ". video ."
-                         ". blerb .";
-
-    #video{
-        grid-area: video;
-        margin-top: 20px;
-        width: 100%;
-    }
-
-    #blerb{
+    ul{
         
-        grid-area: blerb;
-        margin-top: 15px;
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: 
+        ". h1 ."
+        ". content .";
 
+        h1{
+            grid-area: h1;
+            margin-top: 20px;
+        }
+        
+        
+            li{
+                grid-area: content;
+                // display: grid;
+                grid-template-columns: 16px auto 16px;
+                grid-template-areas: 
+                                     ". video ."
+                                     ". blerb ."
+                                     ". buttonred .";
+            
+                #video{
+                    grid-area: video;
+                    margin-top: 20px;
+                    width: 100%;
+                }
+            
+                #blerb{
+                    
+                    grid-area: blerb;
+                    margin-top: 15px;
+            
+                }
+
+                #buttonred{
+                    grid-area: buttonred;
+                    
+                    }
+            }
     }
 }
-
-}
-    

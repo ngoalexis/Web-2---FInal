@@ -391,7 +391,7 @@ p {
 .buttonred {
   font-family: "Poppins", sans-serif;
   background-color: #E84855;
-  padding: 9px;
+  padding: 5px;
   border: none;
   margin-top: 15px;
   color: white;
@@ -535,10 +535,14 @@ footer > div #social ul li {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". h1 ." ". settings ." ". private ." ". tech .";
 }
+@media (min-width: 900px) {
+  #adult ul {
+    grid-template-columns: 16px auto 16px;
+  }
+}
 #adult ul h1 {
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-left: 16px;
 }
 #adult ul #settings {
   grid-area: settings;
@@ -555,10 +559,13 @@ footer > div #social ul li {
   grid-area: tech;
   text-align: right;
   margin-bottom: 40px;
-  margin: 16px;
 }
 #adult #tech h2 {
   margin-bottom: 15px;
+}
+#adult #tech p {
+  color: #081353;
+  font-weight: 900;
 }
 @media (min-width: 900px) {
   #adult #tech p {
@@ -650,47 +657,27 @@ footer > div #social ul li {
 ============= */
 #group {
   text-align: right;
+  display: grid;
 }
 #group ul {
   display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". head ." ". p ." ". img ." ". buttonred .";
 }
-#group ul h1 {
-  grid-area: header;
-  margin-bottom: 20px;
-  margin-top: 60px;
+#group ul #header {
+  grid-area: head;
 }
 #group ul #buttonred {
-  grid-area: button;
+  grid-area: buttonred;
 }
-#group ul li {
-  grid-template-columns: 100%;
-  grid-template-areas: ". img ." ". p ." ". content .";
-  grid-area: content;
-}
-#group ul li img {
-  grid-area: img;
+#group ul img {
   width: 100%;
 }
-#group ul li p {
+#group ul p {
   grid-area: p;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  text-align: left;
 }
-@media (min-width: 768px) {
-  #group ul li #phone {
-    display: none;
-  }
-}
-#group ul li #md {
+#group ul #md {
   display: none;
-}
-@media (min-width: 768px) {
-  #group ul li #md {
-    grid-area: content;
-    display: grid;
-    background-color: aquamarine;
-  }
 }
 
 /* =============
@@ -712,26 +699,31 @@ footer > div #social ul li {
 ============= */
 #rent {
   text-align: right;
-}
-#rent h1 {
-  margin-top: 20px;
-}
-#rent #buttonred {
-  grid-area: buttonred;
-  margin-top: 20px;
+  margin-bottom: 30px;
 }
 #rent ul {
-  grid-area: content;
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". h1 ." ". video ." ". blerb .";
+  grid-template-areas: ". h1 ." ". content .";
 }
-#rent ul #video {
+#rent ul h1 {
+  grid-area: h1;
+  margin-top: 20px;
+}
+#rent ul li {
+  grid-area: content;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". video ." ". blerb ." ". buttonred .";
+}
+#rent ul li #video {
   grid-area: video;
   margin-top: 20px;
   width: 100%;
 }
-#rent ul #blerb {
+#rent ul li #blerb {
   grid-area: blerb;
   margin-top: 15px;
+}
+#rent ul li #buttonred {
+  grid-area: buttonred;
 }

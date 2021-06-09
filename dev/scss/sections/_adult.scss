@@ -13,6 +13,8 @@
             ". tech .";
 
         @include lg{
+            grid-template-columns: 16px auto 16px;
+            
             
 
         }
@@ -21,7 +23,6 @@
         h1{
             margin-top: 30px;
             margin-bottom: 30px;
-            margin-left: 16px;
         }
 
         #settings{
@@ -43,13 +44,17 @@
         grid-area: tech;
         text-align: right;
         margin-bottom: 40px;
-        margin: 16px;
+        
+        // margin: 16px;
 
             h2{
                 margin-bottom: 15px;
             }
 
             p{
+                color: $deepblue;
+                font-weight: 900;
+
                 @include lg{
                     text-align: center;
                     
