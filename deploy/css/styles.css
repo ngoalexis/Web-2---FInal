@@ -530,34 +530,26 @@ footer > div #social ul li {
 /* =============
     adult
 ============= */
-#adult {
+#adult ul {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". h1 ." ". part1 ." ". tech .";
+  grid-template-areas: ". h1 ." ". settings ." ". private ." ". tech .";
 }
-#adult h1 {
+#adult ul h1 {
   margin-top: 30px;
   margin-bottom: 30px;
+  margin-left: 16px;
 }
-@media (min-width: 900px) {
-  #adult ul {
-    display: grid;
-  }
-}
-#adult ul li {
-  grid-area: part1;
-  background-color: aquamarine;
-  margin-bottom: 40px;
-}
-#adult ul li h3 {
-  margin-top: 20px;
-  margin-bottom: 6px;
-}
-#adult ul li #settings {
+#adult ul #settings {
   grid-area: settings;
+  margin-bottom: 20px;
 }
-#adult ul li #private {
+#adult ul #settings h2 {
+  margin-bottom: 20px;
+}
+#adult ul #private {
   grid-area: private;
+  margin-bottom: 20px;
 }
 #adult #tech {
   grid-area: tech;
@@ -658,42 +650,47 @@ footer > div #social ul li {
 ============= */
 #group {
   text-align: right;
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header ." ". image ." ". p ." ". content .";
 }
-#group h1 {
+#group ul {
+  display: grid;
+}
+#group ul h1 {
   grid-area: header;
   margin-bottom: 20px;
   margin-top: 60px;
 }
-#group p {
+#group ul #buttonred {
+  grid-area: button;
+}
+#group ul li {
+  grid-template-columns: 100%;
+  grid-template-areas: ". img ." ". p ." ". content .";
+  grid-area: content;
+}
+#group ul li img {
+  grid-area: img;
+  width: 100%;
+}
+#group ul li p {
   grid-area: p;
   margin-top: 16px;
   margin-bottom: 16px;
   text-align: left;
 }
 @media (min-width: 768px) {
-  #group #phone {
+  #group ul li #phone {
     display: none;
   }
 }
-#group #md {
+#group ul li #md {
   display: none;
 }
 @media (min-width: 768px) {
-  #group #md {
+  #group ul li #md {
     grid-area: content;
     display: grid;
     background-color: aquamarine;
   }
-}
-#group #buttonred {
-  grid-area: buttonred;
-}
-#group img {
-  grid-area: image;
-  width: 100%;
 }
 
 /* =============
@@ -715,16 +712,19 @@ footer > div #social ul li {
 ============= */
 #rent {
   text-align: right;
-  grid-template-columns: 16px auto 16px;
+}
+#rent h1 {
+  margin-top: 20px;
+}
+#rent #buttonred {
+  grid-area: buttonred;
+  margin-top: 20px;
 }
 #rent ul {
   grid-area: content;
-  grid-template-columns: 100%;
-  grid-template-areas: "header" "video" "blerb";
-}
-#rent ul #h1 {
-  grid-area: header;
-  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". h1 ." ". video ." ". blerb .";
 }
 #rent ul #video {
   grid-area: video;
@@ -734,8 +734,4 @@ footer > div #social ul li {
 #rent ul #blerb {
   grid-area: blerb;
   margin-top: 15px;
-}
-#rent #buttonred {
-  grid-area: buttonred;
-  margin-top: 20px;
 }
