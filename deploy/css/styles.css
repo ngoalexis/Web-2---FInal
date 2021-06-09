@@ -641,6 +641,13 @@ footer > div #social ul li {
   margin: 16px;
   text-align: right;
 }
+@media (min-width: 768px) {
+  #group {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". header ." ". image ." ". content .";
+  }
+}
 #group h1 {
   text-align: right;
   margin-bottom: 20px;
@@ -664,10 +671,12 @@ footer > div #social ul li {
   #group #md {
     grid-area: content;
     display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "md buttonred";
   }
 }
 #group #buttonred {
-  grid-area: button;
+  grid-area: buttonred;
 }
 #group img {
   grid-area: image;
@@ -691,26 +700,23 @@ footer > div #social ul li {
 /* =============
     rent
 ============= */
-#rent ul {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". rent ." ". video ." ". button . ";
-}
-#rent ul li {
+#rent {
   text-align: right;
-  grid-area: rent;
 }
-#rent ul li h1 {
-  margin-bottom: 20px;
-  margin-top: 40px;
+#rent ul #h1 {
+  grid-area: header;
+  background-color: blueviolet;
 }
-#rent ul li button {
-  grid-area: button;
-  margin-top: 600px;
-}
-#rent ul li #video {
-  text-align: right;
-  margin-top: 20px;
+#rent ul #video {
   grid-area: video;
+  margin-top: 20px;
   width: 100%;
+}
+#rent ul #blerb {
+  grid-area: blerb;
+  margin-top: 15px;
+}
+#rent #buttonred {
+  grid-area: buttonred;
+  margin-top: 20px;
 }

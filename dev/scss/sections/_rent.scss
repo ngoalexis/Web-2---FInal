@@ -3,35 +3,41 @@
 ============= */
 
 #rent{
-    ul{
-        display: grid;
-        grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". rent ."
-                             ". video ."
-                             ". button . ";
+    text-align: right;
+    // display: grid;
+    // grid-template-columns: 16px auto 16px;
+    // grid-template-areas: ". header ."
+    //                      ". video ."
+    //                      ". blerb ."
+    //                      ;
+    // background-color: black;
+ul{
+    
+    #h1{
+        grid-area: header;
+        background-color: blueviolet;
+        
+    }
 
-        li{
-            text-align: right;
-            grid-area: rent;
+    #video{
+        
+        grid-area: video;
+        margin-top: 20px;
+        width: 100%;
+    }
 
-            h1{
-                margin-bottom: 20px;
-                margin-top: 40px;
-            }
-            
-            button{
-                grid-area: button;
-                margin-top: 600px;
+    #blerb{
+        // background-color: blueviolet;
+        grid-area: blerb;
+        margin-top: 15px;
 
-        }
-
-        #video{
-            text-align: right;
-            margin-top: 20px;
-            grid-area: video;
-            width: 100%;
-        }
-
-        }
     }
 }
+
+#buttonred{
+    grid-area: buttonred;
+    margin-top: 20px;
+    }
+
+}
+    
