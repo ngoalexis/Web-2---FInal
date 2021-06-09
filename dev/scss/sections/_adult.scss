@@ -4,36 +4,46 @@
 
 #adult{
 
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". h1 ."
+               ". part1 ."
+               ". tech .";
+
     h1{
         margin-top: 30px;
         margin-bottom: 30px;
     }
     ul{
-        // display: grid;
-        // grid-template-columns: 16px auto 16px;
-        // grid-template-areas: ". settings ."
-        //                      ". private ."
-        //                      ". tech .";
+       
+        @include lg{
+            display: grid;
 
-        margin: 16px;
+        }
+
+        // margin: 16px;
 
         li{
-
+            grid-area: part1;
+            background-color: aquamarine;
+            // grid-template-columns: ;
             margin-bottom: 40px;
+            
             h3{
                 margin-top: 20px;
                 margin-bottom: 6px;
             }
             #settings{
-                // grid-area: settings;
+                grid-area: settings;
             }
             #private{
-                // grid-area: private;
+                grid-area: private;
             }
         }
     }
 
     #tech{
+
         grid-area: tech;
         text-align: right;
         margin-bottom: 40px;
@@ -44,7 +54,10 @@
             }
 
             p{
-                
+                @include lg{
+                    text-align: center;
+                    
+                }
             }
     }
 }

@@ -4,18 +4,18 @@
 
 #rent{
     text-align: right;
-    // display: grid;
-    // grid-template-columns: 16px auto 16px;
-    // grid-template-areas: ". header ."
-    //                      ". video ."
-    //                      ". blerb ."
-    //                      ;
-    // background-color: black;
+    grid-template-columns: 16px auto 16px;
 ul{
-    
+    grid-area: content;
+    grid-template-columns: 100%;
+    grid-template-areas: "header"
+                         "video"
+                         "blerb";
+
     #h1{
         grid-area: header;
-        background-color: blueviolet;
+        margin-top: 20px;
+        
         
     }
 
@@ -27,7 +27,7 @@ ul{
     }
 
     #blerb{
-        // background-color: blueviolet;
+        
         grid-area: blerb;
         margin-top: 15px;
 

@@ -3,44 +3,44 @@
 ============= */
 
 #group{
-    margin: 16px;
+    // margin: 16px;
     text-align: right;
-
-    @include md{
-        display: grid;
-        grid-template-columns: 16px auto 16px;
-        grid-template-areas: ". header ."
-        ". image ."
-        ". content ."
-    }
-
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". header ."
+    ". image ."
+    ". p ."
+    ". content ."
+    ;
+ul{
+    
+}
     h1{
-        text-align: right;
+        grid-area: header;
         margin-bottom: 20px;
         margin-top: 60px;
-        grid-area: header;
     }
 
     p{
+        grid-area: p;
         margin-top: 16px;
         margin-bottom: 16px;
         text-align: left;
     }
     
     #phone{
-
         @include md{
             display: none;
         }
     }
+
     #md{
         display: none;
 
         @include md{
             grid-area: content;
             display: grid;
-            grid-template-columns: 60% 40%;
-            grid-template-areas: "md buttonred";
+            background-color: aquamarine;
         }
     }
 

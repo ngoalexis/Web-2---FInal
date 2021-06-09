@@ -530,19 +530,34 @@ footer > div #social ul li {
 /* =============
     adult
 ============= */
+#adult {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". h1 ." ". part1 ." ". tech .";
+}
 #adult h1 {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-#adult ul {
-  margin: 16px;
+@media (min-width: 900px) {
+  #adult ul {
+    display: grid;
+  }
 }
 #adult ul li {
+  grid-area: part1;
+  background-color: aquamarine;
   margin-bottom: 40px;
 }
 #adult ul li h3 {
   margin-top: 20px;
   margin-bottom: 6px;
+}
+#adult ul li #settings {
+  grid-area: settings;
+}
+#adult ul li #private {
+  grid-area: private;
 }
 #adult #tech {
   grid-area: tech;
@@ -553,6 +568,12 @@ footer > div #social ul li {
 #adult #tech h2 {
   margin-bottom: 15px;
 }
+@media (min-width: 900px) {
+  #adult #tech p {
+    text-align: center;
+  }
+}
+
 /* =============
     calendar
 ============= */
@@ -598,8 +619,6 @@ footer > div #social ul li {
 }
 #calendar ul li {
   margin-bottom: 30px;
-  margin-left: 70px;
-  margin-right: 70px;
 }
 #calendar ul li div {
   text-align: center;
@@ -638,23 +657,18 @@ footer > div #social ul li {
     group
 ============= */
 #group {
-  margin: 16px;
   text-align: right;
-}
-@media (min-width: 768px) {
-  #group {
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". header ." ". image ." ". content .";
-  }
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header ." ". image ." ". p ." ". content .";
 }
 #group h1 {
-  text-align: right;
+  grid-area: header;
   margin-bottom: 20px;
   margin-top: 60px;
-  grid-area: header;
 }
 #group p {
+  grid-area: p;
   margin-top: 16px;
   margin-bottom: 16px;
   text-align: left;
@@ -671,8 +685,7 @@ footer > div #social ul li {
   #group #md {
     grid-area: content;
     display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-areas: "md buttonred";
+    background-color: aquamarine;
   }
 }
 #group #buttonred {
@@ -702,10 +715,16 @@ footer > div #social ul li {
 ============= */
 #rent {
   text-align: right;
+  grid-template-columns: 16px auto 16px;
+}
+#rent ul {
+  grid-area: content;
+  grid-template-columns: 100%;
+  grid-template-areas: "header" "video" "blerb";
 }
 #rent ul #h1 {
   grid-area: header;
-  background-color: blueviolet;
+  margin-top: 20px;
 }
 #rent ul #video {
   grid-area: video;
