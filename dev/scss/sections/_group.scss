@@ -4,35 +4,46 @@
 
 #group{
     text-align: right;
-   display: grid;
+    display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: 
     ". content .";
+
+    @include lg{
+        display: grid;
+        grid-template-columns: 50px auto 50px;
+        grid-template-areas: 
+        ". content .";
+    }
+    
 >div{
    
     grid-area: content;
     
-    // #header{
-    //     
-    // }
-    // #buttonred{
-    //     
-    // }
+    h1{
+        margin: 20px;
+    }
+   
     img{
         width: 100%;
         grid-area: img;
     }
-    // p{
-    //     
-    // }
+    
     #phone{
         text-align: left;
+
          @include md{
              display: none;
          }
     }
     #md{
         display: none;
+
+        @include md{
+            display: grid;
+            margin-top: 20px;
+        }
+
     }
 }
    

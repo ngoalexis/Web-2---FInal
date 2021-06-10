@@ -3,23 +3,35 @@
 ============= */
 
 #adult{
-display: grid;
+
+    display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". list ."
                         ". tech .";
+
+    @include lg{
+        display: grid;
+        grid-template-columns: 50px auto 50px;
+        grid-template-areas: ". list ."
+                            ". tech .";
+    }
+
+
     ul{
     grid-area: list;
 
-        @include lg{
-            grid-template-columns: 16px auto 16px;
-            
-            
+        @include md{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "h1 . ."
+            "settings . private";
+        }
 
-        }
-        
-        li{
-          
-        }
+        // @include lg{
+        //     grid-template-columns: 16px auto 16px;
+            
+        // }
 
       #title{
           
@@ -34,6 +46,7 @@ display: grid;
         #settings{
             grid-area: settings;
             margin-bottom: 20px;
+            margin-right: 10px;
 
             h2{
                 margin-bottom: 20px;
@@ -42,6 +55,12 @@ display: grid;
         #private{
             grid-area: private;
             margin-bottom: 20px;
+            margin-top: 50px;
+            padding: 5px;
+
+            h2{
+                margin-bottom: 50px;
+            }
         }
     }
 

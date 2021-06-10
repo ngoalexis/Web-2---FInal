@@ -11,17 +11,15 @@
        
     @include lg{
         display: grid;
-        grid-template-columns:repeat(2,1fr);
-        grid-template-areas: "header content"
-                            "family content";
+        grid-template-columns:50px repeat(2,1fr) 50px;
+        grid-template-areas: ". header content ."
+                            ". family content .";
     }
 
    
 >div{ 
     grid-area: header;
 
-    
-   
     
     h1{ 
         
@@ -37,8 +35,8 @@
 
         @include md{
             width: 100%;
-            margin-top: 150px;
-            margin-bottom: 40px;
+            margin-top: 60px;
+            margin-bottom: 20px;
             grid-area: cal;
             display: list-item;
             // align-items: center;
@@ -62,8 +60,21 @@
 }
 
 #family{
+
     grid-area: family;
     text-align: center;
+    margin-top: 20px;
+
+        h2{
+            margin-bottom: 15px;
+        }
+
+    @include lg{
+        p{
+            text-align: left;
+        }
+    }
+    // margin-top: -100px;
 }
     
 
@@ -71,6 +82,7 @@
     display: grid;
     padding: 20px;
     grid-area: content;
+    margin-top: 40px;
 
   
 

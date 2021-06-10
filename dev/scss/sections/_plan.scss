@@ -54,37 +54,41 @@
         }
 
         #img2{
+
             grid-area: img2;
-            // width: 80%;
+
             @include lg{
+
                 img{
                     display: none;
                 }
+
                 background-image: url("../img/wheel.png");
-            background-position: center;
-            background-size: cover;
-            height: 400px;
+                background-position: center;
+                background-size: cover;
+                height: 400px;
             }
         }
        
         #home{
            grid-area: home;
-        //    display: flex;
            justify-content: center;
            align-items: center;
            margin-top: 20px;
            margin-left: 50px;
-           
-        
         }
 
         #paint-p{
             display: none;
+
             @include lg{
                 display: list-item;
                 grid-area: paint-p;
                 background-color: $yellow;
                 margin-top: -100px;
+                margin-bottom: 90px;
+                margin-left: -30px;
+                padding: 15px;
                
                 
             }
@@ -96,7 +100,10 @@
                 display: list-item;
                 grid-area: cost;
                 background-color: $yellow;
-                margin-top: -100px;
+                margin-top: -70px;
+                margin-bottom: 90px;
+                margin-left: -30px;
+                padding: 15px;
             }
         }
 
@@ -105,6 +112,7 @@
             align-items: center;
             margin-top: 20px;
             margin-left: 50px;
+            
 
             #nofood{
                 
@@ -113,7 +121,16 @@
                 @include md{
                     display: grid;
                     margin-top: 20px;
-                    // background-color: burlywood;
+                    font-weight: 30;
+                    font-size: 15px;
+                   
+                }
+
+                @include lg{
+                    display: grid;
+                    font-weight: 30;
+                    font-size: 15px;
+                    // padding: 20px;
                 }
                 
             }
