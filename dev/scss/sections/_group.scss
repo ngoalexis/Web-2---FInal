@@ -4,32 +4,32 @@
 
 #group{
     text-align: right;
-    display: grid;
-  
-ul{
-    display: grid;
+   display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: 
-    ". head ."
-    ". p ."
-    ". img ."
-    ". buttonred .";
-
+    ". content .";
+>div{
+   
+    grid-area: content;
     
-    #header{
-        grid-area: head;
-    }
-    #buttonred{
-        grid-area: buttonred;
-    }
+    // #header{
+    //     
+    // }
+    // #buttonred{
+    //     
+    // }
     img{
         width: 100%;
+        grid-area: img;
     }
-    p{
-        grid-area: p;
-    }
+    // p{
+    //     
+    // }
     #phone{
-
+        text-align: left;
+         @include md{
+             display: none;
+         }
     }
     #md{
         display: none;
@@ -37,74 +37,4 @@ ul{
 }
    
 }
-
-
-
-
-
-
-
-
-
-
-// ul{
-//     display: grid;
-//     // grid-template-columns: 16px auto 16px;
-//     // grid-template-areas: ". h1 ."
-//     // ". content ."
-//     // ". button";
-
-//     h1{
-//         grid-area: header;
-//         margin-bottom: 20px;
-//         margin-top: 60px;
-//     }
-
-//     #buttonred{
-//         grid-area: button;
-//     }
-
-// li{
-//     // display: grid;
-//     grid-template-columns: 100%;
-//     grid-template-areas: 
-//     ". img ."
-//     ". p ."
-//     ". content .";
-
-//     grid-area: content;
-
-
-//     img{
-//         grid-area: img;
-//             width: 100%;
-//     }
-
-
-//     p{
-//         grid-area: p;
-//         margin-top: 16px;
-//         margin-bottom: 16px;
-//         text-align: left;
-//     }
-    
-//     #phone{
-
-//         @include md{
-//             display: none;
-//         }
-//     }
-
-//     #md{
-//         display: none;
-
-//         @include md{
-//             grid-area: content;
-//             display: grid;
-//             background-color: aquamarine;
-//         }
-//     }
-// }
-   
-// }
 

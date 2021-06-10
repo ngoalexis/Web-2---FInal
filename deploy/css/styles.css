@@ -367,8 +367,11 @@ body ul li {
     Typography
 ============= */
 body {
-  font-family: "Playfair Display", serif;
   font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
 }
 
 h1, h2, h3, h4 {
@@ -530,17 +533,20 @@ footer > div #social ul li {
 /* =============
     adult
 ============= */
-#adult ul {
+#adult {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". h1 ." ". settings ." ". private ." ". tech .";
+  grid-template-areas: ". list ." ". tech .";
+}
+#adult ul {
+  grid-area: list;
 }
 @media (min-width: 900px) {
   #adult ul {
     grid-template-columns: 16px auto 16px;
   }
 }
-#adult ul h1 {
+#adult ul #title h1 {
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -658,25 +664,25 @@ footer > div #social ul li {
 #group {
   text-align: right;
   display: grid;
-}
-#group ul {
-  display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". head ." ". p ." ". img ." ". buttonred .";
+  grid-template-areas: ". content .";
 }
-#group ul #header {
-  grid-area: head;
+#group > div {
+  grid-area: content;
 }
-#group ul #buttonred {
-  grid-area: buttonred;
-}
-#group ul img {
+#group > div img {
   width: 100%;
+  grid-area: img;
 }
-#group ul p {
-  grid-area: p;
+#group > div #phone {
+  text-align: left;
 }
-#group ul #md {
+@media (min-width: 768px) {
+  #group > div #phone {
+    display: none;
+  }
+}
+#group > div #md {
   display: none;
 }
 
@@ -724,6 +730,6 @@ footer > div #social ul li {
   grid-area: blerb;
   margin-top: 15px;
 }
-#rent ul li #buttonred {
-  grid-area: buttonred;
+#rent .buttonred {
+  margin-right: 16px;
 }
