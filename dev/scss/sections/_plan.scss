@@ -8,25 +8,63 @@
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". plan .";
 
+    @include lg{
+        grid-template-columns: auto 800px auto;
+    }
+
     img{
         width: 100%;
+        
+        @include lg{
+            width: 100%;
+            margin-left: 30vw;
+        }
     }
     
-    ul{
+    ul{ 
+        grid-area: plan;
         
         display: grid;
         grid-template-columns: 60% auto;
         grid-template-areas: "img1 home"
                             "img2 date";
-        grid-area: plan;
+       
+
+        @include lg{
+            grid-template-columns: 40% auto;
+            grid-template-areas: "img1 img1"
+                                 "paint-p home"
+                                 "img2 img2"
+                                 "cost date";
+            grid-template-rows: 400px;
+        }
 
         #img1{
            grid-area: img1;
+           @include lg{
+            img{
+                display: none;
+            }
+            background-image: url("../img/mug.png");
+            background-position: center;
+            background-size: cover;
+           
+        }
+
         }
 
         #img2{
             grid-area: img2;
             // width: 80%;
+            @include lg{
+                img{
+                    display: none;
+                }
+                background-image: url("../img/wheel.png");
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            }
         }
        
         #home{
@@ -38,6 +76,28 @@
            margin-left: 50px;
            
         
+        }
+
+        #paint-p{
+            display: none;
+            @include lg{
+                display: list-item;
+                grid-area: paint-p;
+                background-color: $yellow;
+                margin-top: -100px;
+               
+                
+            }
+        }
+
+        #cost{
+            display: none;
+            @include lg{
+                display: list-item;
+                grid-area: cost;
+                background-color: $yellow;
+                margin-top: -100px;
+            }
         }
 
         #date{

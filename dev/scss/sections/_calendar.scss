@@ -3,26 +3,28 @@
 ============= */
 
 #calendar{
-
-        display: grid;
+  display: grid;
         grid-template-columns: 16px auto 16px;
-        grid-template-areas: "header . ."
-                             ". scroll ."
-                             ". cal ."
+        grid-template-areas: ". header ."
+                             ". family ."
                              ". content .";
-    
-    
+       
+    @include lg{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        grid-template-areas: "header content"
+                            "family content";
+    }
 
-    // @include md{
-    //     display: grid;
-    //     grid-template-columns: 16 auto 16px;
-    //     grid-template-areas:". header ."
-    //                          ". cal ."
-    //                          ". content .";
-    // }
+   
+>div{ 
+    grid-area: header;
 
+    
+   
+    
     h1{ 
-        grid-area: header;
+        
         margin-bottom: 20px;
         margin-top: 20px;
         font-weight: bold;
@@ -38,8 +40,10 @@
             margin-top: 150px;
             margin-bottom: 40px;
             grid-area: cal;
-            display: grid;
+            display: list-item;
             // align-items: center;
+            
+
         }
 
     }
@@ -53,11 +57,22 @@
            
        }
     }
+    
+   
+}
+
+#family{
+    grid-area: family;
+    text-align: center;
+}
+    
 
     ul{
     display: grid;
     padding: 20px;
     grid-area: content;
+
+  
 
         li{
             margin-bottom: 30px;

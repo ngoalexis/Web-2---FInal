@@ -492,20 +492,59 @@ footer > div #social ul li {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". plan .";
 }
+@media (min-width: 900px) {
+  #plan {
+    grid-template-columns: auto 800px auto;
+  }
+}
 #plan img {
   width: 100%;
 }
+@media (min-width: 900px) {
+  #plan img {
+    width: 100%;
+    margin-left: 30vw;
+  }
+}
 #plan ul {
+  grid-area: plan;
   display: grid;
   grid-template-columns: 60% auto;
   grid-template-areas: "img1 home" "img2 date";
-  grid-area: plan;
+}
+@media (min-width: 900px) {
+  #plan ul {
+    grid-template-columns: 40% auto;
+    grid-template-areas: "img1 img1" "paint-p home" "img2 img2" "cost date";
+    grid-template-rows: 400px;
+  }
 }
 #plan ul #img1 {
   grid-area: img1;
 }
+@media (min-width: 900px) {
+  #plan ul #img1 {
+    background-image: url("../img/mug.png");
+    background-position: center;
+    background-size: cover;
+  }
+  #plan ul #img1 img {
+    display: none;
+  }
+}
 #plan ul #img2 {
   grid-area: img2;
+}
+@media (min-width: 900px) {
+  #plan ul #img2 {
+    background-image: url("../img/wheel.png");
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+  }
+  #plan ul #img2 img {
+    display: none;
+  }
 }
 #plan ul #home {
   grid-area: home;
@@ -513,6 +552,28 @@ footer > div #social ul li {
   align-items: center;
   margin-top: 20px;
   margin-left: 50px;
+}
+#plan ul #paint-p {
+  display: none;
+}
+@media (min-width: 900px) {
+  #plan ul #paint-p {
+    display: list-item;
+    grid-area: paint-p;
+    background-color: #FFE986;
+    margin-top: -100px;
+  }
+}
+#plan ul #cost {
+  display: none;
+}
+@media (min-width: 900px) {
+  #plan ul #cost {
+    display: list-item;
+    grid-area: cost;
+    background-color: #FFE986;
+    margin-top: -100px;
+  }
 }
 #plan ul #date {
   grid-area: date;
@@ -585,37 +646,50 @@ footer > div #social ul li {
 #calendar {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: "header . ." ". scroll ." ". cal ." ". content .";
+  grid-template-areas: ". header ." ". family ." ". content .";
 }
-#calendar h1 {
+@media (min-width: 900px) {
+  #calendar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "header content" "family content";
+  }
+}
+#calendar > div {
   grid-area: header;
+}
+#calendar > div h1 {
   margin-bottom: 20px;
   margin-top: 20px;
   font-weight: bold;
   font-size: 60px;
 }
-#calendar #cal {
+#calendar > div #cal {
   display: none;
 }
 @media (min-width: 768px) {
-  #calendar #cal {
+  #calendar > div #cal {
     width: 100%;
     margin-top: 150px;
     margin-bottom: 40px;
     grid-area: cal;
-    display: grid;
+    display: list-item;
   }
 }
-#calendar #scroll {
+#calendar > div #scroll {
   grid-area: scroll;
 }
-#calendar #scroll h3 {
+#calendar > div #scroll h3 {
   text-align: center;
 }
 @media (min-width: 768px) {
-  #calendar #scroll {
+  #calendar > div #scroll {
     display: none;
   }
+}
+#calendar #family {
+  grid-area: family;
+  text-align: center;
 }
 #calendar ul {
   display: grid;
