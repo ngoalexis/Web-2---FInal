@@ -9,7 +9,7 @@
     grid-template-areas: ". plan .";
 
     @include lg{
-        grid-template-columns: auto 800px auto;
+        grid-template-columns: auto 1200px auto;
     }
 
     img{
@@ -48,6 +48,9 @@
             background-image: url("../img/mug.png");
             background-position: center;
             background-size: cover;
+            height: 500px;
+            margin-left: 200px;
+            margin-right: -100px;
            
         }
 
@@ -66,7 +69,9 @@
                 background-image: url("../img/wheel.png");
                 background-position: center;
                 background-size: cover;
-                height: 400px;
+                height: 550px;
+                margin-left: 200px;
+                margin-right: -100px;
             }
         }
        
@@ -74,8 +79,13 @@
            grid-area: home;
            justify-content: center;
            align-items: center;
-           margin-top: 20px;
+           margin-top: -80px;
            margin-left: 50px;
+           margin-bottom: 90px;
+
+           h2{
+            margin-top: 200px;
+        }
         }
 
         #paint-p{
@@ -85,8 +95,8 @@
                 display: list-item;
                 grid-area: paint-p;
                 background-color: $yellow;
-                margin-top: -100px;
-                margin-bottom: 90px;
+                margin-top: 50px;
+                margin-bottom: 150px;
                 margin-left: -30px;
                 padding: 15px;
                

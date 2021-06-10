@@ -494,7 +494,7 @@ footer > div #social ul li {
 }
 @media (min-width: 900px) {
   #plan {
-    grid-template-columns: auto 800px auto;
+    grid-template-columns: auto 1200px auto;
   }
 }
 #plan img {
@@ -527,6 +527,9 @@ footer > div #social ul li {
     background-image: url("../img/mug.png");
     background-position: center;
     background-size: cover;
+    height: 500px;
+    margin-left: 200px;
+    margin-right: -100px;
   }
   #plan ul #img1 img {
     display: none;
@@ -540,7 +543,9 @@ footer > div #social ul li {
     background-image: url("../img/wheel.png");
     background-position: center;
     background-size: cover;
-    height: 400px;
+    height: 550px;
+    margin-left: 200px;
+    margin-right: -100px;
   }
   #plan ul #img2 img {
     display: none;
@@ -550,8 +555,12 @@ footer > div #social ul li {
   grid-area: home;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: -80px;
   margin-left: 50px;
+  margin-bottom: 90px;
+}
+#plan ul #home h2 {
+  margin-top: 200px;
 }
 #plan ul #paint-p {
   display: none;
@@ -561,8 +570,8 @@ footer > div #social ul li {
     display: list-item;
     grid-area: paint-p;
     background-color: #FFE986;
-    margin-top: -100px;
-    margin-bottom: 90px;
+    margin-top: 50px;
+    margin-bottom: 150px;
     margin-left: -30px;
     padding: 15px;
   }
@@ -788,7 +797,7 @@ footer > div #social ul li {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". content .";
 }
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
   #group {
     display: grid;
     grid-template-columns: 50px auto 50px;
@@ -798,12 +807,39 @@ footer > div #social ul li {
 #group > div {
   grid-area: content;
 }
+@media (min-width: 1200px) {
+  #group > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "h1 h1" "image image" "md button";
+  }
+}
 #group > div h1 {
   margin: 20px;
 }
-#group > div img {
+@media (min-width: 1200px) {
+  #group > div h1 {
+    grid-area: h1;
+  }
+}
+#group > div > div img {
   width: 100%;
   grid-area: img;
+}
+@media (min-width: 1200px) {
+  #group > div > div {
+    background-image: url("../img/paintingclay.png");
+    background-position: center;
+    background-size: cover;
+    grid-area: image;
+    height: 500px;
+    width: 1200px;
+    margin-left: 200px;
+    margin-right: -100px;
+  }
+  #group > div > div img {
+    display: none;
+  }
 }
 #group > div #phone {
   text-align: left;
@@ -820,6 +856,22 @@ footer > div #social ul li {
   #group > div #md {
     display: grid;
     margin-top: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  #group > div #md {
+    background-color: #FFE986;
+    grid-area: md;
+    text-align: left;
+    margin-top: -40px;
+    margin-bottom: 150px;
+    margin-left: -30px;
+    padding: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  #group > div aside {
+    grid-area: button;
   }
 }
 

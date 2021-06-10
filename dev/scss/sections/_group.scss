@@ -9,7 +9,7 @@
     grid-template-areas: 
     ". content .";
 
-    @include lg{
+    @include xl{
         display: grid;
         grid-template-columns: 50px auto 50px;
         grid-template-areas: 
@@ -19,15 +19,43 @@
 >div{
    
     grid-area: content;
+
+    @include xl{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: "h1 h1"
+                             "image image"
+                             "md button";
+    }
     
     h1{
         margin: 20px;
+        @include xl{
+            grid-area: h1;
+        }
     }
-   
-    img{
+   >div{
+       img{
         width: 100%;
         grid-area: img;
+
     }
+
+     @include xl{
+            img{
+                display: none;
+            }
+
+            background-image: url("../img/paintingclay.png");
+            background-position: center;
+            background-size: cover;
+            grid-area: image;
+            height: 500px;
+            width: 1200px;
+            margin-left: 200px;
+            margin-right: -100px;
+        }
+   }
     
     #phone{
         text-align: left;
@@ -35,6 +63,8 @@
          @include md{
              display: none;
          }
+
+         
     }
     #md{
         display: none;
@@ -44,7 +74,23 @@
             margin-top: 20px;
         }
 
+        @include xl{
+            background-color: $yellow;
+            grid-area: md;
+            text-align: left;
+            margin-top: -40px;
+            margin-bottom: 150px;
+            margin-left: -30px;
+            padding: 15px;
+        }
+
     }
+
+  aside{
+      @include xl{
+          grid-area: button;
+      }
+  }
 }
    
 }
